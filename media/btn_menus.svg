@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="160"
+   height="48"
+   id="svg3068"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="btn_menus.svg"
+   inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_canvas_hot.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3070">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3823">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3825" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3827" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3861">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.31378282"
+         id="feGaussianBlur3863" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3841">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3843" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3845" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3812">
+      <stop
+         style="stop-color:#2c00bb;stop-opacity:1;"
+         offset="0"
+         id="stop3814" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop3816" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3869">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.37183639"
+         id="feGaussianBlur3871" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3786">
+      <stop
+         style="stop-color:#808080;stop-opacity:1"
+         offset="0"
+         id="stop3788" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop3790" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3798">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.46792377"
+         id="feGaussianBlur3800" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3778">
+      <stop
+         style="stop-color:#666666;stop-opacity:1"
+         offset="0"
+         id="stop3780" />
+      <stop
+         style="stop-color:#808000;stop-opacity:0;"
+         offset="1"
+         id="stop3782" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3806">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.60576527"
+         id="feGaussianBlur3808" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3778"
+       id="linearGradient3242"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6786053,0,0,1.2607727,-8.8698016,9.0127924)"
+       x1="15"
+       y1="17.362183"
+       x2="15"
+       y2="47.362183" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3841"
+       id="linearGradient3244"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6786053,0,0,1.2607727,-8.8698016,9.0127924)"
+       x1="13"
+       y1="8.3621826"
+       x2="8"
+       y2="14.362183" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3786"
+       id="linearGradient3246"
+       gradientUnits="userSpaceOnUse"
+       x1="25"
+       y1="37.362183"
+       x2="25"
+       y2="2.3621826" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3812"
+       id="radialGradient3248"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.702371,-6.386169e-7,3.5011853e-8,0.75660937,-38.630405,3.9046835)"
+       cx="55"
+       cy="31.003494"
+       fx="55"
+       fy="31.003494"
+       r="26.43372" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3823"
+       id="linearGradient3250"
+       gradientUnits="userSpaceOnUse"
+       x1="55"
+       y1="37.362183"
+       x2="55"
+       y2="12.362183" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.75"
+     inkscape:cx="51.88936"
+     inkscape:cy="24.068122"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="758"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3073">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-16)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke:none;filter:url(#filter3806)"
+       id="rect2987"
+       width="86.127281"
+       height="35.025772"
+       x="1.4538367"
+       y="27.520391"
+       ry="5.7083793"
+       transform="matrix(1.6786053,0,0,1.2607727,5.6363634,-16.413093)"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="6.9084601"
+       y="19.168991"
+       x="10.97459"
+       height="42.389286"
+       width="138.77809"
+       id="rect3772"
+       style="fill:url(#linearGradient3242);fill-opacity:1;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#linearGradient3246);fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter3798)"
+       id="rect3774"
+       width="66.529076"
+       height="27.055677"
+       x="19.894741"
+       y="11.338532"
+       ry="4.4094415"
+       transform="matrix(1.8758449,0,0,1.4089162,-19.354907,5.3290028)"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="5.5115809"
+       y="23.454515"
+       x="25.004936"
+       height="33.818245"
+       width="110.71741"
+       id="rect3776"
+       style="fill:#000000;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#radialGradient3248);fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter3869)"
+       id="rect3810"
+       width="52.867439"
+       height="21.499838"
+       x="26.725559"
+       y="14.116452"
+       ry="3.5039699"
+       transform="matrix(2.0198925,0,0,1.517108,-27.012389,2.6386656)"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient3244);fill-opacity:1;stroke:none"
+       d="M 16.309277,18.294831 C 10.085697,18.580819 6.9925984,22.985957 7.9162514,30.90256 8.6337864,25.137624 10.017847,19.873303 16.309277,18.294831 z"
+       id="path3839"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold"
+       x="42.909092"
+       y="29.454544"
+       id="text3031"
+       sodipodi:linespacing="125%"
+       transform="translate(0,16)"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3033"
+         x="42.909092"
+         y="29.454544" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold"
+       x="28.727283"
+       y="51.999996"
+       id="text3035"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3037"
+         x="28.727283"
+         y="51.999996">CANVAS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3039"
+       y="52.909088"
+       x="29.818192"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="52.909088"
+         x="29.818192"
+         id="tspan3041"
+         sodipodi:role="line">CANVAS</tspan></text>
+    <path
+       style="opacity:0.6;fill:url(#linearGradient3250);fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter3861)"
+       d="m 29.247678,14.874066 47.823202,0 c 0.697723,0 1.259428,0.555955 1.259428,1.246536 l 0,5.155481 c 0,0.690581 -0.622664,0.964237 -1.259428,1.246536 -17.089254,7.576214 -32.640522,5.004155 -47.823202,0 -0.661983,-0.218188 -1.259428,-0.555955 -1.259428,-1.246536 l 0,-5.155481 c 0,-0.690581 0.561705,-1.246536 1.259428,-1.246536 z"
+       id="rect3820"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       transform="matrix(2.0710543,0,0,1.5555346,-29.732097,2.7988256)"
+       inkscape:export-filename="/home/victor/dev/haxe/my_code/decatime/Decatime/Assets/btn_mnu_quit_cold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
