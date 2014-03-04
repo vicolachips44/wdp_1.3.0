@@ -20,6 +20,8 @@ import org.decatime.ui.BrowseForFile;
 import org.decatime.ui.Label;
 import org.decatime.ui.canvas.style.FreeHand;
 import org.decatime.ui.MessageDlg;
+import org.decatime.ui.canvas.remote.Broadcaster;
+import org.decatime.ui.canvas.remote.Server;
 
 class App extends BaseVisualElement implements IObserver {
 
@@ -127,10 +129,10 @@ class App extends BaseVisualElement implements IObserver {
 		#end
 
 		// // TODO remove me and put me in a window box!!
-		// #if !flash
-		// //Facade.getInstance().addBroadcaster(new Broadcaster('192.168.0.110',8181));
-		// //Server.start(canvas, '192.168.0.110', 8181);
-		// #end
+		#if !flash
+		Facade.getInstance().addBroadcaster(new Broadcaster('127.0.0.1',9000));
+		// Server.start(canvas, '127.0.0.1', 8181);
+		#end
 	}
 
 	private function registerPopups(): Void {

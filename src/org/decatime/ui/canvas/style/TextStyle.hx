@@ -164,7 +164,7 @@ class TextStyle extends Style {
 		} else {
 			//trace ("WARNING: Font " + fontRes + " was not loaded");
 		}
-		Facade.doBroadCast(this.getRemoteStruct());
+		Facade.getInstance().doBroadCast(this.getRemoteStruct());
 	}
 
 	public override function prepare(g:Graphics, xpos:Float, ypos: Float): Void {
@@ -195,7 +195,7 @@ class TextStyle extends Style {
 		textField.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
 
 		var msg:String = "" + (xpos) + "," + (ypos) + "";
-		Facade.doBroadCast(CmdParser.CMD_START + CmdParser.CMD_SUFFIX + msg);
+		Facade.getInstance().doBroadCast(CmdParser.CMD_START + CmdParser.CMD_SUFFIX + msg);
 	}
 
 	public function setText(text:String): Void {
@@ -208,7 +208,7 @@ class TextStyle extends Style {
 		strB.add(CmdParser.CMD_CAR);
 		strB.add(CmdParser.CMD_SUFFIX);
 		strB.add(textField.text);
-		Facade.doBroadCast(strB.toString());
+		Facade.getInstance().doBroadCast(strB.toString());
 	}
 	
 	private function onKeyUp(e:KeyboardEvent): Void {
@@ -228,7 +228,7 @@ class TextStyle extends Style {
 
 		drawText();
 		doBroadCast();
-		Facade.doBroadCast(CmdParser.CMD_END + CmdParser.CMD_SUFFIX + "");
+		Facade.getInstance().doBroadCast(CmdParser.CMD_END + CmdParser.CMD_SUFFIX + "");
 		textField.text = tfInitValue;
 		textFieldContainer.visible = false;
 		

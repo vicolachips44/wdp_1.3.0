@@ -44,7 +44,7 @@ class Stroke extends Fill {
 	public function setSize(value:Int): Void {
 		if (size == value) { return; }
 		size = value;
-		Facade.doBroadCast(parent.getRemoteStruct());
+		Facade.getInstance().doBroadCast(parent.getRemoteStruct());
 	}
 
 	public override function toString(): String {

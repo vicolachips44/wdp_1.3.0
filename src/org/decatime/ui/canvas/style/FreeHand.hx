@@ -54,7 +54,7 @@ class FreeHand extends Style {
 
 	public function setBrushType(brushType:String): Void {
 		this.brushType = brushType;
-		Facade.doBroadCast(this.getRemoteStruct());
+		Facade.getInstance().doBroadCast(this.getRemoteStruct());
 	}
 
 	public function getBrushType(): String {
@@ -86,7 +86,7 @@ class FreeHand extends Style {
 			} else {
 				currPacket.add(CmdParser.CMD_START + CmdParser.CMD_SUFFIX);
 				currPacket.add(coordToken);
-				Facade.doBroadCast(currPacket.toString());
+				Facade.getInstance().doBroadCast(currPacket.toString());
 			}
 		}
 	}
@@ -126,7 +126,7 @@ class FreeHand extends Style {
 				currPacket = new StringBuf();
 				currPacket.add(CmdParser.CMD_COORD + CmdParser.CMD_SUFFIX);
 				currPacket.add(coordToken);
-				Facade.doBroadCast(currPacket.toString());
+				Facade.getInstance().doBroadCast(currPacket.toString());
 			}
 		}
 		
@@ -146,12 +146,12 @@ class FreeHand extends Style {
 			if (usePacket) {
 				currPacket.add(coordToken);
 				currPacket.add(CmdParser.XY_PACKET_END);
-				Facade.doBroadCast(currPacket.toString());
+				Facade.getInstance().doBroadCast(currPacket.toString());
 			} else {
 				currPacket = new StringBuf();
 				currPacket.add(CmdParser.CMD_END + CmdParser.CMD_SUFFIX);
 				currPacket.add(coordToken);
-				Facade.doBroadCast(currPacket.toString());
+				Facade.getInstance().doBroadCast(currPacket.toString());
 			}
 		}
 	}

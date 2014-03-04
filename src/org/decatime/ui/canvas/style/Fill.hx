@@ -51,7 +51,7 @@ class Fill {
 	public function setColor(value:Int): Void {
 		if( color == value) { return; }
 		color = value;
-		Facade.doBroadCast(parent.getRemoteStruct());
+		Facade.getInstance().doBroadCast(parent.getRemoteStruct());
 	}
 
 	public function getTransparency(): Float {
@@ -60,7 +60,7 @@ class Fill {
 	public function setTransparency(value:Float): Void {
 		if (transparency == value) { return; }
 		transparency = value;
-		Facade.doBroadCast(parent.getRemoteStruct());
+		Facade.getInstance().doBroadCast(parent.getRemoteStruct());
 	}
 
 	public function toString(): String {

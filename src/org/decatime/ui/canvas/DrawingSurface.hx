@@ -83,19 +83,19 @@ class DrawingSurface extends RemoteDrawingSurface implements IObservable {
 
 	public override function undo(): Void {
 		super.undo();
-		Facade.doBroadCast(CmdParser.CMD_UNDO + CmdParser.CMD_SUFFIX);
+		Facade.getInstance().doBroadCast(CmdParser.CMD_UNDO + CmdParser.CMD_SUFFIX);
 	}
 
 	public override function redo(): Void {
 		super.redo();
-		Facade.doBroadCast(CmdParser.CMD_REDO + CmdParser.CMD_SUFFIX);
+		Facade.getInstance().doBroadCast(CmdParser.CMD_REDO + CmdParser.CMD_SUFFIX);
 	}
 
 	public override function setActiveStyle(sty:IDrawable): Void {
 		super.setActiveStyle(sty);
 		if (mode == RemoteDrawingSurface.MODE_NORMAL) {
 			Facade.doLog('setActiveStyle: Sending the activestyle flow to the broadcaster', this);
-			Facade.doBroadCast(activeStyle.getRemoteStruct());
+			Facade.getInstance().doBroadCast(activeStyle.getRemoteStruct());
 			evManager.notify(EVT_STYLE_CHANGED, sty);
 		}
 	}
@@ -271,7 +271,7 @@ class DrawingSurface extends RemoteDrawingSurface implements IObservable {
 		#end
 		
 		if (mode == RemoteDrawingSurface.MODE_NORMAL) {
-			Facade.doBroadCast(CmdParser.CMD_CLEAR + CmdParser.CMD_SUFFIX);	
+			Facade.getInstance().doBroadCast(CmdParser.CMD_CLEAR + CmdParser.CMD_SUFFIX);	
 			Facade.doLog('the clear command has been broadcasted...', this);
 		}
 		Facade.doLog('raising event EVT_DATA_READY', this);

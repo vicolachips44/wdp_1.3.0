@@ -64,7 +64,7 @@ class ShapeStyle extends Style {
 	public function setShapeType(value:String): Void {
 		if (shapeType == value) { return; }
 		shapeType = value;
-		Facade.doBroadCast(this.getRemoteStruct());
+		Facade.getInstance().doBroadCast(this.getRemoteStruct());
 	}
 
 	public override function prepare(g:Graphics, xpos:Float, ypos:Float): Void {
@@ -77,7 +77,7 @@ class ShapeStyle extends Style {
 		}
 
 		var msg:String = "" + (startX) + "," + (startY) + "";
-		Facade.doBroadCast(CmdParser.CMD_START + CmdParser.CMD_SUFFIX + msg);
+		Facade.getInstance().doBroadCast(CmdParser.CMD_START + CmdParser.CMD_SUFFIX + msg);
 	}
 
 	public override function draw(g:Graphics, xpos:Float, ypos: Float): Void {
@@ -129,7 +129,7 @@ class ShapeStyle extends Style {
 			doDraw(g, endX, endY);
 			msg = "" + (endX) + "," + (endY) + "";
 		}
-		Facade.doBroadCast(CmdParser.CMD_END + CmdParser.CMD_SUFFIX + msg);
+		Facade.getInstance().doBroadCast(CmdParser.CMD_END + CmdParser.CMD_SUFFIX + msg);
 		drawStarted = false;
 	}
 

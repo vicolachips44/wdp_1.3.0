@@ -86,7 +86,7 @@ class Style implements IDrawable {
 			//trace("WARNING: setting value to null is not allowed");
 		}
 		fillProperty = value;
-		Facade.doBroadCast(this.getRemoteStruct());
+		Facade.getInstance().doBroadCast(this.getRemoteStruct());
 	}
 
 	// IDrawable implementation

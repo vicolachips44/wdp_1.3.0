@@ -66,6 +66,8 @@ class Server {
 	private static function getConnected(): Void {
 		socket = new Socket();
 		socket.setBlocking(false);
+		trace ("hostname value is " + hostName);
+		trace ("port value is " + hostPort);
 		socket.bind(new Host(hostName), hostPort);
 		socket.listen(NB_CNX);
 		tm.start();
@@ -80,7 +82,7 @@ class Server {
 					var msg:Bytes = Uncompress.run(cpBytes);
 					cmdParser.parse(msg.toString());
 				} else {
-					//trace ("the packet is uncompressed");
+					trace ("the packet is uncompressed");
 					var msg:String = sk.input.readLine();
 					cmdParser.parse(msg);
 				}

@@ -29,7 +29,7 @@ class Broadcaster {
 	private var bCompress:Bool;
 
 	public function new(remoteHost:String, port:Int) {
-		//trace ("creating remote broadcaster at " + remoteHost);
+		trace ("creating remote broadcaster at " + remoteHost);
 		host = new Host(remoteHost);
 		this.port = port;
 		bCompress = true;
@@ -82,6 +82,7 @@ class Broadcaster {
 				socket.shutdown(true, true);
 				socket.close();
 				main.sendMessage("ok");
+		
 			} catch (e:Dynamic) {
 				var msg:String = "host with ip " + host.toString() + " is unreachable\n the broadcaster will be disabled!";
 				main.sendMessage(msg);

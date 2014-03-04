@@ -42,7 +42,7 @@ class EffectManager {
 		}
 
 		if (surface.getMode() == RemoteDrawingSurface.MODE_NORMAL) {
-			Facade.doBroadCast(broadCastEff);
+			Facade.getInstance().doBroadCast(broadCastEff);
 		}
 	}
 

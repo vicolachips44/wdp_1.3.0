@@ -54,42 +54,25 @@ class Facade extends EventManager implements IObserver {
 	#end
 
 	public static function doLog(msg:String, sender:Dynamic): Void {
-		#if logdebug
-		instance.logger.log(msg, sender);
-		#end
+		trace (msg);
+		// #if logdebug
+		// instance.logger.log(msg, sender);
+		// #end
 	}
 
 	public static function broadcastEnable(value:Bool): Void {
 		instance.bdcEnable = value;
 	}
 
-	public static function doBroadCast(msg:String): Void {
-		if (Facade.getInstance().getCanvas() == null) { return; }
-		if (msg.length == 0) { return; }
-
-		if (instance.docManager == null) { 
-			throw "Doc manager has not been initialized";
-		}
-		if (instance.bdcEnable == false) { return; }
-		
-		doLog("broadcast: " + msg, Facade.instance);
-		instance.docManager.getActiveDocument().getActivePage().add(msg);
-
-		// if (msg.substr(0, 3) == 'eff') {
-		// 	var parser:org.decatime.ui.canvas.remote.CmdParser = new CmdParser(instance.canvas);
-		// 	parser.parse(msg);
-		// }
-	}
 
 	#if !flash
 	public static function notifyAndDisBroadcast(msg:String, b:Broadcaster): Void {
-		// instance.removeBroadcaster(b);
-		// var ip:String = b.getRemoteHostIp();
-		
-		// b.dispose();
-		// b = null;
-		// Facade.doLog(NAMESPACE + "the broadcaster with ip " + ip + " has been removed");
-		// MessageDlg.showDlg('Error', msg);
+		instance.removeBroadcaster(b);
+		var ip:String = b.getRemoteHostIp();
+		trace ("the broadcasting has been disabled...");
+		b.dispose();
+		b = null;
+		// Facade.doLog("the broadcaster with ip " + ip + " has been removed");
 	}
 	#end
 
@@ -122,6 +105,36 @@ class Facade extends EventManager implements IObserver {
 			instance = new Facade();
 		}
 		return instance;
+	}
+
+	public function doBroadCast(msg:String): Void {
+		if (Facade.getInstance().getCanvas() == null) { return; }
+		if (msg.length == 0) { return; }
+
+		if (instance.docManager == null) { 
+			throw "Doc manager has not been initialized";
+		}
+		if (instance.bdcEnable == false) { return; }
+		
+		doLog("broadcast: " + msg, Facade.instance);
+		this.docManager.getActiveDocument().getActivePage().add(msg);
+
+		if (this.broadcasters != null && this.broadcasters.length == 1) {
+			this.broadcasters[0].send(msg);
+		}
+		
+		// if (msg.substr(0, 3) == 'eff') {
+		// 	var parser:org.decatime.ui.canvas.remote.CmdParser = new CmdParser(instance.canvas);
+		// 	parser.parse(msg);
+		// }
+	}
+
+	public function addBroadcaster(value:Broadcaster): Void {
+		broadcasters.push(value);
+	}
+
+	public function removeBroadcaster(value:Broadcaster): Void {
+		broadcasters.remove(value);
 	}
 
 	public function setCanvas(value:DrawingSurface): Void {
