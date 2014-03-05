@@ -7,7 +7,7 @@ import org.decatime.ui.canvas.remote.CmdParser;
 
 class GlowEffect extends BlurEffect {
 
-	private var color:UInt;
+	private var color:Int;
 	private var alpha:Float;
 	private var strength:Float;
 	private var inner:Bool;
