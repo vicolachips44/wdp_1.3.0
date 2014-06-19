@@ -9,7 +9,9 @@ class Main {
 	public function new () {
 		#if !flash
 			var args:Array<String> = Sys.args();
-			if (args.length == 0) {
+			// in dev mode a new argument has come to openfl 2 (-livereload)
+			// since we are using two arguments then this piece of code is not really a problem...
+			if (args.length == 0 || args.length == 1) {
 				runClient();
 			} else {
 				runServer(args);
